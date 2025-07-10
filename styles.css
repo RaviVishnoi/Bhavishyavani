@@ -1,0 +1,124 @@
+  body {
+            font-family: 'Arial', sans-serif;
+            background-color: #5d3a7a;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #3a2352;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            color: #f8c537;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .deck {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .card {
+            width: 120px;
+            height: 200px;
+            background-color: #f8c537;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #3a2352;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        .card.selected {
+            transform: rotateY(180deg);
+            background-color: #fff;
+            color: #3a2352;
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #4a2d6b;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .result h2 {
+            color: #f8c537;
+        }
+        
+        .prediction {
+            font-size: 18px;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        
+        .funny {
+            font-style: italic;
+            color: #f8c537;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: #f8c537;
+            color: #3a2352;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: scale(1.05);
+        }
+        
+        .card-back {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="10" ry="10" fill="%233a2352"/><circle cx="50" cy="50" r="30" fill="%23f8c537"/><path d="M50,20 L50,80 M20,50 L80,50" stroke="%233a2352" stroke-width="8"/></svg>');
+            background-size: cover;
+        }
+
+        .reading-type {
+            margin: 20px 0;
+        }
+
+        .reading-type button {
+            margin: 5px;
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 80px;
+                height: 130px;
+                font-size: 18px;
+            }
+        }
