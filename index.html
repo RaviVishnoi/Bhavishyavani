@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पूरा तरोत खेल - Complete Tarot Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>पूरा तरोत खेल 🔮</h1>
+        <p>अपना भविष्य जानने के लिए एक कार्ड चुनें!</p>
+        
+        <div class="reading-type">
+            <button onclick="showAllCards()">सभी कार्ड्स</button>
+            <button onclick="showThreeCards()">3 कार्ड्स</button>
+        </div>
+        
+        <div class="deck" id="deck">
+            <!-- Cards will be added by JavaScript -->
+        </div>
+        
+        <div class="result" id="result">
+            <h2 id="card-name">कार्ड का नाम</h2>
+            <div class="prediction" id="prediction">यहाँ भविष्यवाणी आएगी...</div>
+            <div class="funny" id="funny">यहाँ मजेदार टिप्पणी आएगी...</div>
+            <button onclick="resetCards()">फिर से कोशिश करें</button>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
